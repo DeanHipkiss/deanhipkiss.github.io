@@ -27,9 +27,11 @@
 
     --backgroundImage1: linear-gradient(270deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url(images/Robot1.jpeg);
     --backgroundImage2: linear-gradient(270deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url(images/CityatNight.jpeg);
+    --backgroundImage3: linear-gradient(270deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url(images/Robot3.jpeg);
 
     --backgroundImageMobile1: linear-gradient(270deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url(images/RobotMobile1.png);
     --backgroundImageMobile2: linear-gradient(270deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url(images/CityatNight.jpeg);
+    --backgroundImageMobile3: linear-gradient(270deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url(images/RobotMobile3.png);
   }
 
 body {
@@ -173,6 +175,16 @@ body {
 
 .backgroundImage2 {
     background-image: var(--backgroundImage2);
+    height: 100%;
+    width: 100%;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.backgroundImage3 {
+    background-image: var(--backgroundImage3);
     height: 100%;
     width: 100%;
     background-blend-mode: darken;
@@ -490,6 +502,10 @@ gap: 15px;
 
     .backgroundImage2 {
         background-image: var(--backgroundImageMobile2);
+    }
+
+    .backgroundImage3 {
+        background-image: var(--backgroundImageMobile3);
     }
   }
 

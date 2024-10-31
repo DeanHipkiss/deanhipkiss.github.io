@@ -9,9 +9,11 @@ class Header extends HTMLElement {
             <nav class="navbarContainer">
                 <div class="contentWidth">
                     <div class="navbar">
-                        <div class="navbarLogo">
-                            <img src="images/DH-Logo.png" alt="Small Logo">
-                        </div>
+                        <a href="#">
+                            <div class="navbarLogo">
+                                <img src="images/DH-Logo.png" alt="Small Logo">
+                            </div>
+                        </a>
                         <div class="hideMobile">
                             <ul class="nav-links">
                                 <li><a href="#">Home</a></li>
@@ -29,7 +31,7 @@ class Header extends HTMLElement {
                                 </li>
             
                                 <li><a href="#background">Background Page</a></li>
-                                <li><a href="#contact">Contact Us</a></li>
+                                <li><a href="#contact">Contact us</a></li>
                             </ul>
 
                         </div>
