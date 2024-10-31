@@ -1,0 +1,508 @@
+
+:root {
+    --navBarColour: #333;
+    --navTextColour:#ffffff;
+    --navItemHover: #575757;
+
+    --navBarMenuColour: #f9f9f9;
+    --navBarMenuTextColour: #333;
+    --navBarMenuHoverColour: #eeeeee;
+    --navBarMenuBorderrColour: #eeeeee;
+
+    --pageBackgroundColour: #ffffff;
+
+    --backgroundColour1: #ffffff;
+    --backgroundColour2: lightgray;
+    --backgroundColour3: #686868;
+
+    --textColour:#333;
+    --textColourLight:#ffffff;
+
+    --buttonColour1: orange;
+    --buttonColourHover1: rgb(172, 121, 28);
+
+    --buttonColour2: orange;
+    --buttonColourHover2: rgb(172, 121, 28);
+
+
+    --backgroundImage1: linear-gradient(270deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url(images/Robot1.jpeg);
+    --backgroundImage2: linear-gradient(270deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url(images/CityatNight.jpeg);
+
+    --backgroundImageMobile1: linear-gradient(270deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url(images/RobotMobile1.png);
+    --backgroundImageMobile2: linear-gradient(270deg, rgba(0, 0, 0, 0.59), rgba(0, 0, 0, 0.59)), url(images/CityatNight.jpeg);
+  }
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--textColour);
+  }
+
+.contentSection{
+    width: 100%; 
+
+}
+
+.sectionTitle {
+    width:100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.sectionTitle h1, h2 {
+    margin: 0;
+}
+
+.contentWidth {
+    max-Width:1024px;
+    margin: auto;
+ }
+
+ .fullHeightDiv {
+    position: relative;
+    min-height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Maximum width */
+}
+
+.flexColumns{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:40px
+    
+}
+
+.column300 {
+    max-width: 300px;
+    margin:10px;
+}
+.column300 img {
+    
+    max-width: 300px;
+}
+
+.column400 {
+    max-width: 400px;
+    margin:10px;
+}
+
+.column840 {
+    max-width: 840px;
+    margin:10px;
+}
+
+.column400 H1 {
+    margin: 0;
+}
+
+.column400 img {
+    max-width: 400px;
+}
+
+.buttonPanel {
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin:auto
+}
+
+.button {
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;  
+    width: 130px;
+
+}
+.button:hover {
+    cursor: pointer;
+}
+
+.button1{
+    background-color: var(--buttonColour1); 
+    color: white;
+}
+.button1:hover {
+    background-color: var(--buttonColourHover1); 
+}
+
+.button2{
+    background-color: var(--buttonColour2); 
+    color: white;
+}
+.button2:hover {
+    background-color: var(--buttonColourHover2); 
+}
+
+.imageShadow {
+    border-radius: 15px;
+    box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.backgroundColour1 {
+    background-color: var(--backgroundColour1);
+}
+
+.backgroundColour2 {
+    background-color: var(--backgroundColour2);
+}
+
+.backgroundColour3 {
+    background-color: var(--backgroundColour3);
+}
+
+.textLightColour {
+    color: var(--textColourLight);
+}
+
+.backgroundImage1 {
+    background-image: var(--backgroundImage1);
+    height: 100%;
+    width: 100%;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.backgroundImage2 {
+    background-image: var(--backgroundImage2);
+    height: 100%;
+    width: 100%;
+    background-blend-mode: darken;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+.font-20{
+    font-size: 20px;
+}
+
+.font-22{
+    font-size: 22px;
+}
+
+.font-24{
+    font-size: 24px;
+}
+
+.font-28{
+    font-size: 28px;
+}
+
+.font-34{
+    font-size: 34px;
+}
+
+.font-44{
+    font-size: 44px;
+}
+
+.font-50{
+    font-size: 50px;
+}
+
+.p-top-60 {
+    padding-top:60px;
+}
+
+.p-bottom-60 {
+    padding-bottom:60px;
+}
+
+.p-bottom-40 {
+    padding-bottom:40px;
+}
+
+.p-top-1 {
+    padding-top:1px;
+}
+
+.alignTextCenter {
+    text-align: center;
+}
+
+.alignContentCenter {
+    align-content: center;
+}
+
+.alignItemsCenter {
+    align-items: center;
+}
+
+.positionAbsoluteTop {
+    position: absolute;
+    top:0;
+}
+
+
+/* Email Form */
+.form-body {
+    border-color: var(--navBarColour);
+    border-width: 1px;
+    border-style:solid;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    padding-inline: 30px;
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+.form-field {
+    background: #eee;
+    border: none;
+    border-radius: 5px;
+    color: var(--textColour);
+    padding: 10px;
+    width: 300px;
+    font-size: 18px;
+}
+
+.form-group {
+    padding-top:20px;
+}
+
+.form-label {
+ 
+    font-size: 20px;
+    color: var(--textColour);
+}
+
+.input-group{
+    padding-top: 8px;
+
+}
+
+
+
+
+/* Nav bar ____________________   */
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbarContainer {
+width:100%;
+height:60px;
+background-color: var(--navBarColour);
+color: var(--navTextColour);
+}
+
+.navbar {
+height:60px;
+display:flex;
+justify-content: space-between;
+align-items: center;
+margin-left: 16px;
+margin-right: 16px;
+}
+
+.navbarLogo {
+height: 100%;
+max-height: 50px;;
+padding: 0;
+margin: 0;
+}
+
+.navbarLogo > img{
+height: 50px;
+padding: 0;
+margin: 0;
+}
+
+.nav-links {
+list-style: none;
+display: flex;
+gap: 15px;
+}
+
+.nav-links li {
+    margin: 0;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--navTextColour);
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--navItemHover);
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 26px;
+    left: 0;
+    font-size: 16px;
+    background-color: var(--navBarMenuColour);
+    border-color: var(--navBarMenuBorderrColour);
+    border-width: 1px;
+    border-style: solid;
+    background-clip: padding-box;
+    list-style: none;
+    padding:0;
+    margin: 0;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 8px 16px;
+    color: var(--navBarMenuTextColour);
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--navBarMenuHoverColour);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+    color: var(--navTextColour);
+}
+
+.hamburgerButton {
+    background-color: transparent;
+    color: var(--navTextColour);
+    border-color: var(--navTextColour);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    height:44px;
+    width:44px;
+}
+
+.hamburgerButton:hover {
+    
+    background-color: var(--navBarMenuHoverColour);
+    color: var(--navBarColour)
+    
+}
+
+/* Nav bar end ____________________   */
+
+/* Side Nav _______________________  */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0px; 
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0px;
+    background-color: var(--navBarMenuColour);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.6s; /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  /* The navigation menu links */
+  .sidenavLink {
+    padding: 8px 8px 8px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--navBarMenuTextColour);
+    display: block;
+    width:300px;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    background-color: var(--navBarMenuHoverColour);
+  }
+
+  .sidebaveTop {
+    display:flex;   
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .sidenavTitle {
+    color: var(--navBarMenuTextColour);
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    font-size: 36px;
+    color: var(--navBarMenuTextColour);
+    text-decoration: none;
+    padding: 10px;
+  }
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .hideMobile {
+        display:none;
+    }
+    .sidenav {
+        display:block;
+    }
+    .mobileCenter{
+        text-align: center;
+    }
+
+    .backgroundImage1 {
+        background-image: var(--backgroundImageMobile1);
+    }
+
+    .backgroundImage2 {
+        background-image: var(--backgroundImageMobile2);
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .hideDesktop {
+        display:none;
+        
+    }
+    .sidenav {
+        display:none;
+    }
+}
+
+
+
+
